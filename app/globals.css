@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #edf1ff; /* section-bg-color */
+  --color-surface-dark: #e2e6ff;
+  --color-ink: #1e293b; /* primary-text-color */
+  --color-heading: #0f172a; /* section-heading-color */
+  --color-header: #0f172a; /* header-color */
+  --color-accent: #6366f1; /* accent-1 - buttons, links, hover */ /* #ff6f61 #38BDF8 #00F5D4 #4ADE80 #FFB347 #D8AE48 #6EE7B7 #C08457 #6B9E67 */
+  --color-accent-2: #289dbe; /* accent-2 - secondary buttons, icons */
+
+  /* Fonts */
+  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-montserrat: var(--font-montserrat), var(--font-sans);
+}
+
+@utility text-heading {
+  color: var(--color-heading);
+}
+
+@utility bg-header {
+  background-color: var(--color-header);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-surface text-ink antialiased font-inter;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-montserrat text-heading;
+  }
+
+  section {
+    @apply py-24 px-6;
+  }
+
+  section:nth-child(odd) {
+    background-color: var(--color-surface);
+  }
+
+  section:nth-child(even) {
+    background-color: var(--color-surface-dark);
+  }
+}
