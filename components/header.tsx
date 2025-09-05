@@ -24,7 +24,7 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-header text-surface z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full bg-header-footer text-surface z-50 transition-all duration-300 ${
         isTop ? "" : "shadow-[0_2px_6px_rgba(0,0,0,0.35)]"
       }`}
     >

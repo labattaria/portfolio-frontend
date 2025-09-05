@@ -36,9 +36,9 @@ export default function Hero() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full border-1 border-[#1e293b] text-[#1e293b] 
+                className="w-12 h-12 flex items-center justify-center rounded-full border-1 border-heading text-heading 
                         transition-colors duration-300
-                       hover:bg-[#1e293b] hover:border-[#edf1ff] hover:text-[#edf1ff]"
+                       hover:bg-heading hover:border-[#edf1ff] hover:text-[#edf1ff]"
               >
                 <Icon className="w-6 h-6" />
               </a>

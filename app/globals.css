@@ -5,8 +5,8 @@
   --color-surface-dark: #e2e6ff;
   --color-ink: #1e293b; /* primary-text-color */
   --color-heading: #0f172a; /* section-heading-color */
-  --color-header: #0f172a; /* header-color */
-  --color-accent: #6366f1; /* accent-1 - buttons, links, hover */ /* #ff6f61 #38BDF8 #00F5D4 #4ADE80 #FFB347 #D8AE48 #6EE7B7 #C08457 #6B9E67 */
+  --color-header-footer: #0f172a; /* header-footer-color */
+  --color-accent: #6366f1; /* accent-1 - buttons, links, hover */ /* #ff6f61 #38BDF8 #00F5D4 #4ADE80 #FFB347 #D8AE48 #6EE7B7 #C08457 #6B9E67 #2C3E96 */
   --color-accent-2: #289dbe; /* accent-2 - secondary buttons, icons */
 
   /* Fonts */
