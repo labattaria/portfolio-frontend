@@ -35,9 +35,9 @@ export default function Header() {
       >
         <Link
           href="/"
-          className="text-xl font-bold font-montserrat cursor-pointer"
+          className="text-lg font-bold font-montserrat cursor-pointer"
         >
-          Niko
+          [<span>NK</span>]
         </Link>
 
         <nav>
@@ -46,7 +46,7 @@ export default function Header() {
               <li key={link.name}>
                 <Link
                   href={link.href}
-                  className="text-surface uppercase font-semibold hover:text-accent transition-colors duration-300 font-montserrat"
+                  className="text-surface uppercase font-bold hover:text-accent transition-colors duration-300 font-montserrat"
                 >
                   {link.name}
                 </Link>

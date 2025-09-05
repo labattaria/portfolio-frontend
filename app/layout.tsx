@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "Nikolay Koreshkov — Frontend Developer | Portfolio",
   description:
-    "Portfolio of Nikolay Koreshkov, a frontend developer specializing in React, Next.js, and modern web technologies. Explore my projects, skills, personal and contact information.",
+    "Portfolio of Nikolay Koreshkov, a frontend developer specializing in React, Next.js, Typescript and modern web technologies. Explore my projects, skills, personal and contact information.",
 };
 
 export default function RootLayout({
