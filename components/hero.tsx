@@ -2,11 +2,31 @@ import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { SiTelegram } from "react-icons/si";
 
 const socialLinks = [
-  { icon: FaGithub, url: "https://github.com/labattaria" },
-  { icon: FaLinkedin, url: "https://linkedin.com/in/yourusername" },
-  { icon: FaTwitter, url: "https://twitter.com/yourusername" },
-  { icon: SiTelegram, url: "https://t.me/magna_carta" },
-  { icon: FaDiscord, url: "https://discord.com/users/labattaria" },
+  {
+    icon: FaGithub,
+    url: "https://github.com/labattaria",
+    label: "GitHub",
+  },
+  {
+    icon: FaLinkedin,
+    url: "https://linkedin.com/in/yourusername",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaTwitter,
+    url: "https://twitter.com/yourusername",
+    label: "Twitter",
+  },
+  {
+    icon: SiTelegram,
+    url: "https://t.me/magna_carta",
+    abel: "Telegram",
+  },
+  {
+    icon: FaDiscord,
+    url: "https://discord.com/users/labattaria",
+    label: "Discord",
+  },
 ];
 
 export default function Hero() {
@@ -36,11 +56,12 @@ export default function Hero() {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full border-1 border-heading text-heading 
+                aria-label={link.label}
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-heading text-heading 
                         transition-colors duration-300
-                       hover:bg-heading hover:border-[#edf1ff] hover:text-[#edf1ff]"
+                      hover:bg-heading hover:border-[#edf1ff] hover:text-[#edf1ff]"
               >
-                <Icon className="w-6 h-6" />
+                <Icon className="w-5 h-5" />
               </a>
             );
           })}
