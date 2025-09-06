@@ -2,92 +2,140 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { SiTelegram } from "react-icons/si";
+import { ArrowUpRight } from "lucide-react";
 
 const socialLinks = [
-  { icon: FaGithub, url: "https://github.com/labattaria" },
-  { icon: FaLinkedin, url: "https://linkedin.com/in/yourusername" },
-  { icon: FaTwitter, url: "https://twitter.com/yourusername" },
-  { icon: SiTelegram, url: "https://t.me/magna_carta" },
-  { icon: FaDiscord, url: "https://discord.com/users/labattaria" },
+  {
+    icon: FaGithub,
+    url: "https://github.com/labattaria",
+    label: "GitHub",
+  },
+  {
+    icon: FaLinkedin,
+    url: "https://linkedin.com/in/yourusername",
+    label: "LinkedIn",
+  },
+  {
+    icon: FaTwitter,
+    url: "https://twitter.com/yourusername",
+    label: "Twitter",
+  },
+  {
+    icon: SiTelegram,
+    url: "https://t.me/magna_carta",
+    abel: "Telegram",
+  },
+  {
+    icon: FaDiscord,
+    url: "https://discord.com/users/labattaria",
+    label: "Discord",
+  },
 ];
 
 export default function Footer() {
   return (
-    <section id="contact" className="bg-header-footer py-20">
-      <div className="max-w-7xl mx-auto px-0 text-center">
-        <Link
-          href="/"
-          className="text-surface text-lg font-bold font-montserrat cursor-pointer"
-        >
-          [<span>NK</span>]
-        </Link>
+    <footer id="contact" className="bg-header-footer py-16 text-surface">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+        {/* LEFT: brand + hook */}
+        <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <Link
+            href="/"
+            className="mb-3 text-lg font-bold font-montserrat cursor-pointer"
+          >
+            [<span>NK</span>]
+          </Link>
+          <p className="mb-4 text-accent-2 text-sm font-medium">
+            Living, learning, & leveling up every single day.
+          </p>
+          <p className="text-sm text-surface max-w-xs">
+            I’m always open and excited to discuss new opportunities and
+            interesting projects.
+          </p>
+        </div>
 
-        <p className="mt-5 text-xl text-[#38BDF8] font-medium">
-          Living, learning, & leveling up every single day.
-        </p>
+        {/* CENTER: contact info + CTA */}
+        <div className="flex flex-col items-center text-center">
+          <h4 className="font-montserrat font-semibold text-surface mb-4">
+            Get in Touch
+          </h4>
 
-        <hr className="border-2 border-gray-600 w-32 mx-auto my-6" />
+          <a
+            href="mailto:labattarix@gmail.com"
+            className="underline hover:text-accent duration-300 mb-2"
+          >
+            labattarix@gmail.com
+          </a>
 
-        <p className="text-lg font-normal text-surface mb-5 max-w-2xl mx-auto">
-          I’m always open and excited to discuss new opportunities and
-          interesting projects. Feel free to reach out!
-        </p>
+          <a
+            href="tel:+380953207299"
+            className="underline hover:text-accent duration-300 mb-2"
+          >
+            +380953207299
+          </a>
 
-        <div className="flex flex-col gap-2 items-center mb-6 text-surface">
-          <p>
-            Email:{" "}
+          <p className="text-sm mb-4">
+            Location: Ukraine, Kyiv{" "}
+            <span className="italic">(ready to relocate at own expense)</span>
+          </p>
+
+          <div className="flex gap-3">
             <a
-              href="mailto:labattarix@gmail.com"
-              className="underline hover:text-accent"
+              href="/resume.pdf"
+              download
+              className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/70 duration-300"
             >
-              labattarix@gmail.com
+              Download CV
             </a>
-          </p>
-          <p>
-            Phone:{" "}
-            <a href="tel:+1234567890" className="underline hover:text-accent">
-              +380953207299
-            </a>
-          </p>
-          <p>Location: Ukraine, Kyiv (ready to relocate at own expense)</p>
+            <Link
+              href="#hero"
+              scroll={true}
+              className="flex items-center gap-2 rounded-md border border-surface/30 px-4 py-2 text-sm font-medium hover:border-accent/90 hover:text-accent/90 duration-300"
+            >
+              Back to Top <ArrowUpRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
 
-        <p className="mb-3 text-base text-[#38BDF8]">Connect with me online:</p>
+        {/* RIGHT: socials + microcopy */}
+        <div className="flex flex-col items-center md:items-end text-center md:text-right">
+          <p className="mb-3 text-base text-accent-2 font-medium">
+            Connect with me online:
+          </p>
 
-        <div className="flex gap-4 justify-center mb-8">
-          {socialLinks.map((link, index) => {
-            const Icon = link.icon;
-            return (
-              <a
-                key={index}
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-12 h-12 flex items-center justify-center rounded-full border border-surface text-surface 
-                           transition-colors duration-300
-                           hover:bg-surface hover:text-heading hover:border-surface"
-              >
-                <Icon className="w-6 h-6" />
-              </a>
-            );
-          })}
-        </div>
+          <div className="flex gap-3 mb-6">
+            {socialLinks.map((link, index) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.label}
+                  className="w-10 h-10 flex items-center justify-center rounded-full border border-surface/30 
+                     hover:bg-surface hover:text-heading hover:border-surface duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
+                >
+                  <Icon className="w-5 h-5" />
+                </a>
+              );
+            })}
+          </div>
 
-        <p className="text-base text-surface">
-          Handcrafted by me © labattaria {new Date().getFullYear()}.
-        </p>
-
-        <div className="flex items-center justify-center mt-2">
-          <span className="mr-3 text-sm text-surface">Made with</span>
-          <Image
-            src="/technologies/NextJS-Dark.svg"
-            alt="NextJS tech icon"
-            width={24}
-            height={24}
-          />
-          <span className="ml-1 text-sm text-surface">NextJS</span>
+          <p className="mb-2 text-sm text-surface/70">
+            Handcrafted by me © labattaria {new Date().getFullYear()}
+          </p>
+          <div className="flex items-center text-xs text-surface/60">
+            <span className="mr-2">Made with</span>
+            <Image
+              src="/technologies/NextJS-Dark.svg"
+              alt="NextJS tech icon"
+              width={20}
+              height={20}
+            />
+            <span className="ml-1">NextJS</span>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
