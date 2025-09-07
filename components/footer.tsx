@@ -35,7 +35,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer id="contact" className="bg-header-footer py-16 text-surface">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* LEFT: brand + hook */}
         <div className="flex flex-col items-center md:items-start text-center md:text-left">
           <Link
@@ -47,7 +47,7 @@ export default function Footer() {
           <p className="mb-4 text-accent-2 text-sm font-medium">
             Living, learning, & leveling up every single day.
           </p>
-          <p className="text-sm text-surface max-w-xs">
+          <p className="text-sm text-surface max-w-xs font-normal">
             I’m always open and excited to discuss new opportunities and
             interesting projects.
           </p>
@@ -61,19 +61,19 @@ export default function Footer() {
 
           <a
             href="mailto:labattarix@gmail.com"
-            className="underline hover:text-accent duration-300 mb-2"
+            className="underline font-normal hover:text-accent duration-300 mb-2"
           >
             labattarix@gmail.com
           </a>
 
           <a
             href="tel:+380953207299"
-            className="underline hover:text-accent duration-300 mb-2"
+            className="underline font-normal hover:text-accent duration-300 mb-2"
           >
             +380953207299
           </a>
 
-          <p className="text-sm mb-4">
+          <p className="text-sm font-normal mb-4">
             Location: Ukraine, Kyiv{" "}
             <span className="italic">(ready to relocate at own expense)</span>
           </p>
@@ -87,7 +87,7 @@ export default function Footer() {
               Download CV
             </a>
             <Link
-              href="#hero"
+              href="#home"
               scroll={true}
               className="flex items-center gap-2 rounded-md border border-surface/30 px-4 py-2 text-sm font-medium hover:border-accent/90 hover:text-accent/90 duration-300"
             >
@@ -121,10 +121,10 @@ export default function Footer() {
             })}
           </div>
 
-          <p className="mb-2 text-sm text-surface/70">
+          <p className="mb-2 font-normal text-sm text-surface/70">
             Handcrafted by me © labattaria {new Date().getFullYear()}
           </p>
-          <div className="flex items-center text-xs text-surface/60">
+          <div className="flex items-center text-xs font-normal text-surface/60">
             <span className="mr-2">Made with</span>
             <Image
               src="/technologies/NextJS-Dark.svg"
