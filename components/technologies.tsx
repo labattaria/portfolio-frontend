@@ -4,7 +4,7 @@ import { technologies } from "@/data/technologies";
 export default function Technologies() {
   return (
     <section id="technologies" className="py-20">
-      <div className="max-w-7xl mx-auto px-0">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-montserrat uppercase font-bold text-heading text-center">
           Technologies
         </h2>
@@ -25,11 +25,11 @@ export default function Technologies() {
               <Image
                 src={tech.src}
                 alt={tech.name}
-                width={68}
-                height={68}
+                width={60}
+                height={60}
                 className="mb-2"
               />
-              <span className="text-ink text-sm font-light">{tech.name}</span>
+              <span className="text-ink text-sm font-normal">{tech.name}</span>
             </li>
           ))}
         </ul>
