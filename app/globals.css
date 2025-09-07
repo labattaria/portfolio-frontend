@@ -41,7 +41,7 @@
   }
 
   section {
-    @apply py-20;
+    @apply py-20 scroll-mt-[70px];
   }
 
   section:nth-child(odd) {
