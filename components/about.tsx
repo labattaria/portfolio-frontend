@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <section id="about">
-      <div className="max-w-7xl mx-auto px-0">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl uppercase font-bold text-heading text-center">
           About Me
         </h2>
