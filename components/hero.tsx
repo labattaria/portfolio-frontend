@@ -31,8 +31,8 @@ const socialLinks = [
 
 export default function Hero() {
   return (
-    <section id="hero" className="py-20">
-      <div className="max-w-7xl mx-auto px-0">
+    <section id="home" className="py-20">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-montserrat font-semibold text-heading text-center mb-4">
           Koreshkov Nikolay
         </h1>
@@ -57,9 +57,8 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={link.label}
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-heading text-heading 
-                        transition-colors duration-300
-                      hover:bg-heading hover:border-[#edf1ff] hover:text-[#edf1ff]"
+                className="w-10 h-10 flex items-center justify-center rounded-full border border-heading
+                    hover:bg-heading hover:text-[#edf1ff] duration-300"
               >
                 <Icon className="w-5 h-5" />
               </a>
