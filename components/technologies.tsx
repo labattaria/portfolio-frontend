@@ -16,7 +16,7 @@ export default function Technologies() {
           high-performance, modern applications.
         </p>
 
-        <ul className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-6 justify-items-center">
+        <ul className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] gap-4 justify-items-center">
           {technologies.map((tech) => (
             <li
               key={tech.name}
@@ -29,7 +29,9 @@ export default function Technologies() {
                 height={60}
                 className="mb-2"
               />
-              <span className="text-ink text-sm font-normal">{tech.name}</span>
+              <span className="text-ink text-sm font-normal mb-3">
+                {tech.name}
+              </span>
             </li>
           ))}
         </ul>
