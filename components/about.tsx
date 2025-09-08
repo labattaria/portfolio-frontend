@@ -17,20 +17,20 @@ export default function About() {
           experiment, and improve my skills to become a stronger developer.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="flex flex-col items-center px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center">
+          <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">
               Experience
             </h3>
             <p className="text-base font-normal text-ink">
-              Over the past 2 years of studying and building projects, I’ve
+              Over the past 2.5 years of studying and building projects, I’ve
               worked with modern frameworks like React and Next.js, along with
               tools such as TypeScript, Git, and Tailwind CSS, creating scalable
               and high-performance web apps.
             </p>
           </div>
 
-          <div className="flex flex-col items-center px-6">
+          <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">Growth</h3>
             <p className="text-base font-normal text-ink">
               I’m naturally curious and always looking for new challenges. I
@@ -39,7 +39,7 @@ export default function About() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center px-6">
+          <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">Goals</h3>
             <p className="text-base font-normal text-ink">
               I’m looking for a full-time job where I can put my knowledge into
@@ -49,7 +49,7 @@ export default function About() {
           </div>
         </div>
 
-        <p className="text-center px-6 mt-8 text-lg text-ink font-normal">
+        <p className="text-center text-lg text-ink font-normal">
           Feel free to{" "}
           <Link href="#contact">
             <span className="text-lg text-[#0f172a] font-medium underline">
