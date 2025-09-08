@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
-import { SiTelegram } from "react-icons/si";
+import { MailCheck, NotebookText } from "lucide-react";
+import { RiTelegram2Fill } from "react-icons/ri";
 
 const socialLinks = [
   {
@@ -18,7 +20,7 @@ const socialLinks = [
     label: "Twitter",
   },
   {
-    icon: SiTelegram,
+    icon: RiTelegram2Fill,
     url: "https://t.me/magna_carta",
     abel: "Telegram",
   },
@@ -43,9 +45,27 @@ export default function Hero() {
         <hr className="border-2 border-gray-300 w-32 mx-auto my-6" />
 
         <p className="text-lg text-ink font-normal text-center mb-8 italic">
-          I turn ideas into responsive, interactive websites that are fast,
-          smooth, and built with clean, scalable code.
+          I turn ideas into responsive, interactive web applications that are
+          fast, smooth, and built with clean, scalable code.
         </p>
+
+        <div className="flex justify-center gap-3 mb-9">
+          <Link
+            href="#contact"
+            scroll={true}
+            className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium bg-accent/10 text-accent hover:bg-accent/70 hover:text-[#ffffff] duration-300"
+          >
+            <MailCheck className="w-4 h-4" /> Contact Me
+          </Link>
+          <Link
+            href="#projects"
+            scroll={true}
+            className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium bg-accent/10 text-accent hover:bg-accent/70 hover:text-[#ffffff] duration-300"
+          >
+            <NotebookText className="w-4 h-4" />
+            View Projects
+          </Link>
+        </div>
 
         <div className="flex gap-4 items-center justify-center">
           {socialLinks.map((link, index) => {
