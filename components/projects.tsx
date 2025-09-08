@@ -81,7 +81,7 @@ export default function Projects() {
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium bg-accent text-[#ffffff] hover:bg-accent/70 duration-300"
+                      className="flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium bg-accent text-[#ffffff] hover:bg-accent/70 duration-300"
                     >
                       View Demo <ArrowUpRight className="w-4 h-4" />
                     </a>
@@ -90,7 +90,7 @@ export default function Projects() {
               </div>
 
               {/* SEPARATOR */}
-              {index < projects.length - 1 && (
+              {index < visibleCount - 1 && (
                 <hr className="border-t-2 border-gray-300 my-12" />
               )}
             </Fragment>
@@ -99,13 +99,20 @@ export default function Projects() {
 
         {/* SHOW MORE BUTTON */}
         {visibleCount < projects.length && (
-          <div className="flex justify-center">
-            <button
-              onClick={showMore}
-              className="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-accent text-[#ffffff] hover:bg-accent/70 duration-300"
-            >
-              Show more projects <ArrowDown className="w-4 h-4" />
-            </button>
+          <div className="flex justify-center mt-12">
+            <div className="flex items-center w-full max-w-3xl">
+              <div className="flex-1 border-t-2 border-gray-300"></div>
+
+              <button
+                onClick={showMore}
+                className="flex items-center gap-2 rounded-full px-5 py-2 mx-6 text-sm font-medium cursor-pointer bg-accent text-[#ffffff] hover:bg-accent/70 duration-300"
+                aria-label="Show more projects"
+              >
+                Show more projects <ArrowDown className="w-4 h-4" />
+              </button>
+
+              <div className="flex-1 border-t-2 border-gray-300"></div>
+            </div>
           </div>
         )}
       </div>
