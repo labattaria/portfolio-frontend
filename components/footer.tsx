@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
-import { SiTelegram } from "react-icons/si";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Download } from "lucide-react";
+import { RiTelegram2Fill } from "react-icons/ri";
 
 const socialLinks = [
   {
@@ -21,7 +21,7 @@ const socialLinks = [
     label: "Twitter",
   },
   {
-    icon: SiTelegram,
+    icon: RiTelegram2Fill,
     url: "https://t.me/magna_carta",
     abel: "Telegram",
   },
@@ -82,9 +82,9 @@ export default function Footer() {
             <a
               href="/resume.pdf"
               download
-              className="rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/70 duration-300"
+              className="flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/70 duration-300"
             >
-              Download CV
+              Download CV <Download className="w-4 h-4" />
             </a>
             <Link
               href="#home"
