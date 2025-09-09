@@ -18,7 +18,7 @@ const socialLinks = [
   },
   {
     icon: FaXTwitter,
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/labattarix",
     label: "Twitter",
   },
   {
