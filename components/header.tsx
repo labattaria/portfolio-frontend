@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const links = [
+  const navLinks = [
     { name: "Home", href: "#home" },
     { name: "About me", href: "#about" },
     { name: "Technologies", href: "#technologies" },
@@ -34,7 +34,6 @@ export default function Header() {
         }
       });
 
-      // футер: если дошли до низа страницы
       if (
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 2
@@ -46,7 +45,7 @@ export default function Header() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // сразу выставляем правильную подсветку
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -71,7 +70,7 @@ export default function Header() {
 
         <nav>
           <ul className="flex space-x-8">
-            {links.map((link) => {
+            {navLinks.map((link) => {
               const isActive = activeSection === link.href.replace("#", "");
               return (
                 <li key={link.name} className="relative">
