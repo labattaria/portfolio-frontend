@@ -12,7 +12,7 @@ const socialLinks = [
   },
   {
     icon: FaLinkedin,
-    url: "https://linkedin.com/in/yourusername",
+    url: "https://www.linkedin.com/in/nikolaykoreshkov/",
     label: "LinkedIn",
   },
   {
@@ -112,8 +112,8 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="w-10 h-10 flex items-center justify-center rounded-full border border-surface/30 
-                     hover:bg-surface hover:text-heading hover:border-surface duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
+                  className="w-10 h-10 flex items-center justify-center rounded-full border border-surface/40 
+                      hover:bg-accent hover:text-surface hover:border-accent duration-300 focus:outline-none focus:ring-2 focus:ring-accent"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
