@@ -1,8 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaTwitter, FaDiscord } from "react-icons/fa";
 import { MailCheck, NotebookText } from "lucide-react";
+import { FaGithub, FaLinkedin, FaDiscord } from "react-icons/fa";
 import { RiTelegram2Fill } from "react-icons/ri";
+import { FaXTwitter } from "react-icons/fa6";
 
 const socialLinks = [
   {
@@ -16,7 +17,7 @@ const socialLinks = [
     label: "LinkedIn",
   },
   {
-    icon: FaTwitter,
+    icon: FaXTwitter,
     url: "https://twitter.com/yourusername",
     label: "Twitter",
   },
