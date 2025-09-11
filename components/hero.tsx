@@ -18,8 +18,8 @@ const socialLinks = [
   },
   {
     icon: FaXTwitter,
-    url: "https://x.com/labattarix",
-    label: "Twitter",
+    url: "https://x.com/labattaria",
+    label: "Twitter/X",
   },
   {
     icon: RiTelegram2Fill,
