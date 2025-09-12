@@ -13,8 +13,9 @@ export default function About() {
 
         <p className="text-[20px] text-center font-normal text-ink mb-12 max-w-3xl mx-auto">
           I’m a Junior Frontend Developer passionate about creating modern,
-          user-friendly web applications. Curious by nature, I constantly learn,
-          experiment, and improve my skills to become a stronger developer.
+          high-performance, and user-friendly web applications. Curious by
+          nature, I constantly learn, experiment, and improve my skills to
+          become a stronger developer.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center">
@@ -25,8 +26,8 @@ export default function About() {
             <p className="text-base font-normal text-ink">
               Over the past 2.5 years of studying and building projects, I’ve
               worked with modern frameworks like React and Next.js, along with
-              tools such as TypeScript, Git, and Tailwind CSS, creating scalable
-              and high-performance web apps.
+              tools such as Redux, GraphQL, TypeScript, Git and Tailwind,
+              creating scalable and high-performance web apps.
             </p>
           </div>
 
