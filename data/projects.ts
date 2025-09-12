@@ -77,6 +77,7 @@ export const projects = [
       "React Router",
       "React Hook Form",
       "Redux",
+      "Yup",
       "MUI",
       "SASS",
     ],
