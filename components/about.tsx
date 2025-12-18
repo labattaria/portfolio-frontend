@@ -12,10 +12,11 @@ export default function About() {
         <hr className="border-2 border-gray-300 w-32 mx-auto my-6" />
 
         <p className="text-[20px] text-center font-normal text-ink mb-12 max-w-3xl mx-auto">
-          I’m a Junior Frontend Developer passionate about creating modern,
-          high-performance, and user-friendly web applications. Curious by
-          nature, I constantly learn, experiment, and improve my skills to
-          become a stronger developer.
+          I’m a Junior Frontend Developer focused on building modern,
+          high-performance, and user-friendly web applications. I already have
+          hands-on experience creating real projects and enjoy understanding how
+          applications work under the hood — from component structure and state
+          management to data flow and performance considerations.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8 text-center">
@@ -24,28 +25,35 @@ export default function About() {
               Experience
             </h3>
             <p className="text-base font-normal text-ink">
-              Over the past 2.5 years of studying and building projects, I’ve
-              worked with modern frameworks like React and Next.js, along with
-              tools such as Redux, GraphQL, TypeScript, Git and Tailwind,
-              creating scalable and high-performance web apps.
+              Over the past 2.5 years, I’ve built and shipped multiple frontend
+              projects using React and Next.js. I work with TypeScript, Redux
+              Toolkit, Tailwind CSS, Git, and modern tooling, and I have
+              practical experience designing application structure, managing
+              state, working with data, and deploying projects with attention to
+              scalability, performance, and code quality.
             </p>
           </div>
 
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">Growth</h3>
             <p className="text-base font-normal text-ink">
-              I’m naturally curious and always looking for new challenges. I
-              enjoy exploring new tools, trying out fresh ideas, and finding
-              better ways to build and improve with every project I take on.
+              I’m naturally curious and approach learning through hands-on
+              experimentation. I regularly explore documentation, analyze other
+              developers’ solutions, refactor my own code, and look for better
+              architectural and UX decisions with each new project. I value
+              feedback, code reviews, and clear reasoning behind technical
+              choices.
             </p>
           </div>
 
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">Goals</h3>
             <p className="text-base font-normal text-ink">
-              I’m looking for a full-time job where I can put my knowledge into
-              practice, collaborate with a team, contribute to real projects,
-              and continue growing as a Frontend Developer.
+              At this stage, I’m looking to move from independent project work
+              to a professional team environment. I want to contribute to real
+              products, collaborate closely with other developers, and continue
+              growing through practical challenges, mentorship, and shared
+              responsibility for production code.
             </p>
           </div>
         </div>
