@@ -49,8 +49,8 @@ export default function About() {
           <div className="flex flex-col items-center">
             <h3 className="text-xl font-semibold mb-3 text-heading">Goals</h3>
             <p className="text-base font-normal text-ink">
-              At this stage, I’m looking to move from independent project work
-              to a professional team environment. I want to contribute to real
+              At this stage, I want to move from independent project work into a
+              professional team environment. I want to contribute to real
               products, collaborate closely with other developers, and continue
               growing through practical challenges, mentorship, and shared
               responsibility for production code.
