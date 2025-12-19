@@ -75,7 +75,7 @@ export default function Footer() {
           </a>
 
           <p className="text-sm font-normal mb-4">
-            Location: Ukraine, Kropyvnytskyi{" "}
+            Location: Kropyvnytskyi, Ukraine{" "}
             <span className="italic">(ready to relocate at own expense)</span>
           </p>
 
