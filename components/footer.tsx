@@ -75,13 +75,13 @@ export default function Footer() {
           </a>
 
           <p className="text-sm font-normal mb-4">
-            Location: Ukraine, Kyiv{" "}
+            Location: Ukraine, Kropyvnytskyi{" "}
             <span className="italic">(ready to relocate at own expense)</span>
           </p>
 
           <div className="flex gap-3">
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1P7Yv4sPfYTf3ExdPFRQz5B4ed7R9_Ytr/view?usp=sharing"
               download
               className="flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/70 duration-300"
             >
