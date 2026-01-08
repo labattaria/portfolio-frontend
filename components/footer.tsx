@@ -81,7 +81,7 @@ export default function Footer() {
 
           <div className="flex gap-3">
             <a
-              href="https://drive.google.com/file/d/1P7Yv4sPfYTf3ExdPFRQz5B4ed7R9_Ytr/view?usp=sharing"
+              href="https://drive.google.com/file/d/1JaYc2z5YS1ui7Czmtnp-woU8Oqk76shP/view?usp=sharing"
               download
               className="flex items-center gap-2 rounded-md bg-accent px-4 py-2 text-sm font-medium text-white hover:bg-accent/70 duration-300"
             >
