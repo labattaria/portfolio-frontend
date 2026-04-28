@@ -46,7 +46,7 @@ export default function About() {
 
             <p className="text-base text-ink mb-4 leading-relaxed">
               Over the past 2.5 years, I’ve built and shipped multiple frontend
-              projects using React and Next.js — from small applications to more
+              projects using React and Next.js - from small applications to more
               structured, scalable solutions.
             </p>
 
