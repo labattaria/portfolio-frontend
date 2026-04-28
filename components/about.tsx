@@ -19,7 +19,7 @@ export default function About() {
           writing clean, scalable code and creating fast, user-friendly
           interfaces.
           <br />
-          <br />I enjoy going beyond just implementation — understanding how
+          <br />I enjoy going beyond just implementation - understanding how
           things work under the hood, making thoughtful architectural decisions,
           and improving performance where it actually matters.
         </p>
