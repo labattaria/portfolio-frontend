@@ -67,7 +67,7 @@ export default function About() {
 
             <p className="text-base text-ink mt-4 leading-relaxed">
               I pay attention to code quality, maintainability, and real-world
-              usability — not just making things work.
+              usability - not just making things work.
             </p>
           </div>
 
